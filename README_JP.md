@@ -12,7 +12,11 @@ VLAN を使用してネットワークを分割し、異なるブロードキャ
 
 ## トポロジー
 
-![Topology and Ping Test](topology_ping_test.png)
+Cisco 2960 スイッチ ×1  
+PC ×4  
+
+PC0 と PC1 は VLAN 10 に割り当てられます。  
+PC2 と PC3 は VLAN 20 に割り当てられます。
 
 ## ネットワーク設計
 
@@ -74,7 +78,6 @@ exit
 同じ VLAN の通信
 ping 192.168.10.11
 Reply from 192.168.10.11
-
 異なる VLAN の通信
 ping 192.168.20.10
 Request timed out
@@ -85,7 +88,11 @@ Request timed out
 
 異なる VLAN 間では、ルーターなどのレイヤー3デバイスがない限り通信できません。
 
-このラボは VLAN によるネットワーク分離を示しています。
+これは VLAN によるネットワーク分離を示しています。
+
+## スクリーンショット
+
+![Network Screenshot](topology_ping_test.png)
 
 ## ラボファイル
 
@@ -93,7 +100,7 @@ Packet Tracer ラボファイルのダウンロード:
 
 [vlan-network-lab.pkt](vlan-network-lab.pkt)
 
-Cisco Packet Tracer で動作確認済み
+Cisco Packet Tracer 8.x で動作確認済み
 
 ## ライセンス
 
