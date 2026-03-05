@@ -8,9 +8,13 @@ This lab demonstrates basic VLAN configuration on a Layer 2 switch using Cisco P
 
 Two VLANs are created to segment the network into separate broadcast domains. Devices within the same VLAN can communicate with each other, while devices in different VLANs cannot communicate without a Layer 3 device such as a router.
 
-## Screenshot
+## Topology
 
-![Topology and Ping Test](topology_ping_test.png)
+1 Cisco 2960 Switch  
+4 PCs  
+
+PC0 and PC1 are assigned to VLAN 10.  
+PC2 and PC3 are assigned to VLAN 20.
 
 ## Network Design
 
@@ -70,9 +74,8 @@ exit
 ## Verification
 
 Test within the same VLAN:
-ping 192.168.10.11
+ping 192.168.20.10
 Reply from 192.168.10.11
-
 Test between different VLANs:
 ping 192.168.20.10
 Request timed out
@@ -85,13 +88,17 @@ Devices in different VLANs cannot communicate without routing.
 
 This lab demonstrates VLAN-based network segmentation.
 
+## Screenshot
+
+![Network Screenshot](topology_ping_test.png)
+
 ## Lab File
 
 Download the Packet Tracer lab file:
 
 [vlan-network-lab.pkt](vlan-network-lab.pkt)
 
-Tested on Cisco Packet Tracer 
+Tested on Cisco Packet Tracer 8.x
 
 ## License
 
