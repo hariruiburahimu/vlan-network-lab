@@ -8,7 +8,7 @@ This lab demonstrates basic VLAN configuration on a Layer 2 switch using Cisco P
 
 Two VLANs are created to segment the network into separate broadcast domains. Devices within the same VLAN can communicate with each other, while devices in different VLANs cannot communicate without a Layer 3 device such as a router.
 
-## Topology
+## Screenshot
 
 ![Topology and Ping Test](topology_ping_test.png)
 
